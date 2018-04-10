@@ -8,6 +8,7 @@
         for (var file of chunk.files) {
           if (file.match(/\.(js|css)$/)) { %>
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.0.13/vuetify.min.css">
   </head>
   <body>
     <!--vue-ssr-outlet-->
