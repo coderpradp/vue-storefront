@@ -2,7 +2,9 @@
 // They will be registered later with Vue.use(). You can find examples in core/plugins/index.js
 
 // Export plugin objects here. They will be proceeded by Vue.use()
-export {
+import VueCharts from 'vue-chartjs'
 
+export {
+  VueCharts
 }
 
